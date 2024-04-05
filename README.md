@@ -63,6 +63,13 @@ globus ls "$olcfdtn:/ccs/home/suzanne"
  1015  globus transfer "$olcfdtnt:/ccs/home/suzanne/vec_add.f90" "$olcfdtn:/ccs/home/suzanne/liea/"
  1016  globus transfer "$olcfdtn:/ccs/home/suzanne/vec_add.f90" "$olcfdtn:/ccs/home/suzanne/liea/"
 
+ Moves direcory every min for eterntiy 
+globus timer create transfer --interval 1m --recursive $olcf:/ccs/home/suzanne/start/ $olcf:/ccs/home/suzanne/transferred/
+
+had to use the web interface to turn it off. 
+
+
+
 
 
 
